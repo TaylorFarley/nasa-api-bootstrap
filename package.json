@@ -8,6 +8,7 @@
         "build:pug": "node scripts/build-pug.js",
         "build:scripts": "node scripts/build-scripts.js",
         "build:scss": "node scripts/build-scss.js",
+        "dev": "npm run build && node scripts/start.js",
         "clean": "node scripts/clean.js",
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"
@@ -29,7 +30,7 @@
         "email": "feedback@startbootstrap.com"
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
+    "author": "Start Bootstrap",    
     "contributors": [
         "David Miller (http://davidmiller.io/)"
     ],
@@ -38,7 +39,8 @@
         "url": "https://github.com/StartBootstrap/startbootstrap-creative.git"
     },
     "dependencies": {
-        "bootstrap": "4.5.0"
+        "bootstrap": "4.5.0",
+        "env-cmd": "^10.1.0"
     },
     "devDependencies": {
         "autoprefixer": "9.8.0",
